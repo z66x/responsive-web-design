@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Free Money!</h1>
+    <p id="description">no strings attached ;)</p>
+    <form action="#" method="post" id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name: 
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label" for="email">Email: 
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label" for="number">Money You'd like: 
+                <input type="number" id="number" min="0" max="1000000000000" placeholder="Enter amount" required>
+            </label>
+            <label for="dropdown">Location:
+                <select id="dropdown">
+                    <option value="india">India</option>
+                    <option value="International">International</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>How'd you like to recieve the money?</legend>
+            <label><input type="radio" name="payment-method" class="inline" value="wired" checked> Wired</label>
+            <label><input type="radio" name="payment-method" class="inline" value="bitcoin"> Bitcoin</label>
+        </fieldset>
+        <fieldset>
+            <label><input type="checkbox" value="time" class="inline">You need the money immediatly!</label>
+            <label><input type="checkbox" value="confirmation" class="inline">You really need it!</label>
+            <label for="need"> What'd you do with the money?
+                <textarea id="need" placeholder="porsche gt3 rs..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit">
+</body>
+</html>
